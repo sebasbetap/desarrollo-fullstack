@@ -1,4 +1,4 @@
-# desarrollo-fullstack
+# desarrollo-fullstack WrapperCoin v1.0
 Ejercicio de desarrollo Fullstack para Bancolombia v1.0.
 
 Nota Supuesto General: Como desarrollo FullStack, la implementación contiene la base general de todo el ejercicio planteado (BackEnd y FrontEnd)
@@ -29,5 +29,5 @@ El desarrollo de este ejercicio se centró en la base del desarrollo BackEnd y F
 En cuanto a las preguntas que plantea el ejercicio, se responderá de forma general: Todas las funciones del desarrollo se pueden automatizar gracias a herramientas de automatización como Automation Anywhere y Serenity BDD+. Y todo es suceptible de ser automatizado a menos que se generen herramientas de verificación de humano como "captcha" para garantizar seguridad en los procesos.
 
 ## Pipelines en Azure
-Se realizaron pipelines exitosamente en Azure DevOps para el FrontEnd. Allí se encuentra el código fuente al igual que en repositorio de Github: https://github.com/sebasbetap/desarrollo-fullstack.git
+Se realizaron pipelines exitosamente en Azure DevOps para el FrontEnd. Allí se encuentra el código fuente al igual que en el repositorio de Github: https://github.com/sebasbetap/desarrollo-fullstack.git
 
