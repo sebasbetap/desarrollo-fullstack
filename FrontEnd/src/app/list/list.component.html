@@ -1,0 +1,18 @@
+<section class="container-md">
+    <div class="row content_form">
+        <div class="col-md-6 col-sm-12">
+            <ul class="list-group">
+                <li class="list-group-item active">Top 20 of Crypto coins</li>
+                <li class="list-group-item" *ngFor="let data of list">
+                    <strong>{{data.type}} </strong>
+                    <span> {{data.value}} </span>
+                    <a routerLink="/home/{{data.value}}">
+                        <button type="submit" class="btn btn-light" (click)="exchange(data)">
+                            <img width="20" src="assets/img/exchange.png" alt="">
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
