@@ -1,7 +1,11 @@
-# How to Run WrapperCoin FrontEnd
+# Cómo correr WrapperCoin FrontEnd
 
-1. Install Angular node_modules locally with `npm install @angular/cli`
-2. Run with `ng serve --open`
+1. Instalar los node_modules de Angular localmente con `npm install @angular/cli`
+2. Correr con `ng serve --open`
+
+# Verificación de API BackEnd consumida desde FrontEnd
+
+La API del BackEnd es consumida por este FrontEnd. Se puede verificar su estado de conexión en la consola del navegador si está o no siendo ejecutada.
 
 # wrappercoin-frontend
 

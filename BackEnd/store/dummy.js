@@ -1,3 +1,4 @@
+// DB dummy con fines de prueba
 const db = {
     'user': [
         { id: '1', name: 'Juan' },
