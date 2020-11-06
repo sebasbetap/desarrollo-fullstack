@@ -14,10 +14,6 @@ export class ListComponent implements OnInit {
 
   form: any;
 
-  clickEx: any = {
-    status: false
-  };
-
   btc: any = {
     status: true,
     value: 13197
@@ -26,6 +22,10 @@ export class ListComponent implements OnInit {
   usd: any = {
     status: false,
     value: 1
+  };
+
+  clickEx: any = {
+    status: false
   };
   
   list: Crypto[];
@@ -121,7 +121,7 @@ export class ListComponent implements OnInit {
   }
 
   exchange(data) {
-    this.clickEx.status = true;
+    this.clickEx.status = false;
     console.log("HomeComponent -> exchange -> data", data)
     this.usd.status = false;
   }

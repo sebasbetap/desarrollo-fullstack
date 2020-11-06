@@ -28,10 +28,11 @@ export class HomeComponent implements OnInit {
   total: number = 0;
   
   valueCoin: any;
+
   clickEx: any = {
     status: false
   };
-
+ 
   constructor(private formBuilder: FormBuilder, private utilsService: UtilsService, private activatedRoute: ActivatedRoute) {
     this.form = this.formBuilder.group(
       {
@@ -155,18 +156,19 @@ export class HomeComponent implements OnInit {
   }
 
   eventTotal() {
-    if (!!this.clickEx.status) {
-      if (!!this.btc.status) {
-        this.total = this.form.value.amount / this.btc.value
+    if (this.clickEx.status == true) {
+        if (!!this.btc.status) {
+          this.total = this.form.value.amount / this.btc.value
+        } else {
+          this.total = this.form.value.amount * this.btc.value
+        }
       } else {
-        this.total = this.form.value.amount * this.btc.value
-      }
-    } else {
         this.total = this.form.value.amount / this.valueCoin
       }
   }
 
   changeMoney() {
+    this.clickEx.status = true;
     this.form.get('amount').setValue(this.total);
     if (!!this.btc.status) {
       this.usd.status = true;
@@ -178,10 +180,10 @@ export class HomeComponent implements OnInit {
     this.eventTotal();
   }
 
-  exchange(data) {
-    this.clickEx.status = true;
+  /*exchange(data) {
+    this.clickEx.status = false;
     console.log("HomeComponent -> exchange -> data", data)
     this.usd.status = false;
-  }
+  }*/
 
 }
