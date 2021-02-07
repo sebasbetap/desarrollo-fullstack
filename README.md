@@ -24,9 +24,8 @@ Al interior de la carpeta FrontEnd se encuentra la implementación de la SPA con
 3. El maquetado cumple con los parámetros que se piden en el ejercicio. Se da por supuesto la libre utilización de Bootstrap dentro de los componentes HTML para ayudar a personalizar dichos parámetros.
 4. La página cuenta con el botón de shuffle utilizado para intercambiar entre USD y BTC cumpliendo con la conversión propuesta. Al no contar con transmisión real-time de la página BraveNew Coin, se toman valores reales (1/11/2020) dados en USD, para crear lista dummy para realizar las diferentes conversiones, tanto en la página de Realizar Cambio, como para realizar cambio con la lista de monedas seleccionando de la lista top 20 de prueba, teneniendo como resultado una conversión exitosa de todas las 20 cryptomonedas. Esto posibilitará implementar la lista de scroll infinito con datos reales una vez se cuente con este endpoint desde la api.
 
-### Automatización
-El desarrollo de este ejercicio se centró en la base del desarrollo BackEnd y FrontEnd por lo cual, para el ejercicio de automatización necesitaría asesoría del equipo y/o tiempo en su defecto para investigar e implementar en este tema en el cual no se posee aún experiencia.
-En cuanto a las preguntas que plantea el ejercicio, se responderá de forma general: Todas las funciones del desarrollo se pueden automatizar gracias a herramientas de automatización como Automation Anywhere y Serenity BDD+. Y todo es suceptible de ser automatizado a menos que se generen herramientas de verificación de humano como "captcha" para garantizar seguridad en los procesos.
+## Automatización
+Se realizó la Automatización de la pantalla de cambio con Selenium WebDriver.
 
 ## Pipelines en Azure
 Se realizaron pipelines exitosamente en Azure DevOps para el FrontEnd. Allí se encuentra el código fuente al igual que en el repositorio de Github: https://github.com/sebasbetap/desarrollo-fullstack.git
